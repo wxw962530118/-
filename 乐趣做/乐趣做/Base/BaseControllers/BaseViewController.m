@@ -16,22 +16,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self setNavigationBar];
+}
+- (void)setNavigationBar {
+    if (1 == self.navigationController.viewControllers.count) {
+        self.navigationItem.leftBarButtonItem = nil;
+        return;
+    }
+    /* 设置导航栏上面的内容 */
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    // 设置图片
+    [backBtn setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+    // 设置尺寸
+    backBtn.frame = (CGRect){{0,0}, backBtn.currentBackgroundImage.size};
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)back{
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
+
+
 
 @end

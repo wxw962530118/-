@@ -9,7 +9,7 @@
 //#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface RootTabItemModel : NSObject
+@interface RootTabItemModel : BaseModel
 @property (nonatomic, copy) NSString *class_name;
 
 @property (nonatomic, copy) NSString *icon_normal;

@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  乐趣做
+//
+//  Created by 王新伟 on 2017/5/8.
+//  Copyright © 2017年 王新伟. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "Masonry.h"
+#import "APIKey.h"
+#import "MJRefresh.h"
+#import "MacroColors.h"
+#import "BaseModel.h"
+#import "MJExtension.h"
+#import "AFNetworking.h"
+#import "ToolBaseClass.h"
+#import "UIView+Categorys.h"
+#import "MacroMeasurement.h"
+#import "MacroEnvironment.h"
+#import "UIImageView+WebCache.h"
+#import "BaseNavigationController.h"
+#import "RootTabBarController.h"
+#import "BaseViewController.h"
+#import "MBProgressHUD.h"
+#import "UITableViewCell+Cell.h"
+#import "UINavigationController+Additions.h"
+
+#endif
+
+
+#endif /* PrefixHeader_pch */

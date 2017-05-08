@@ -7,10 +7,7 @@
 //
 
 #import "RootTabBarController.h"
-#import "BaseNavigationController.h"
-#import "BaseViewController.h"
 #import "RootTabItemModel.h"
-#import "MJExtension.h"
 /** TabBar根控制器目录 */
 #define TabControllerCatalog @"TabCatalog"
 
@@ -21,8 +18,7 @@
 @implementation RootTabBarController
 
 /** 从本地获取Tabbar根控制器目录 */
-- (NSArray<RootTabItemModel *> *)fetchTabCatalogFromBundle
-{
+- (NSArray<RootTabItemModel *> *)fetchTabCatalogFromBundle{
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:TabControllerCatalog ofType:@"plist"];
     NSArray *tabConCatalog = [[NSArray alloc] initWithContentsOfFile:plistPath];
     NSMutableArray *tabModels = [RootTabItemModel mj_objectArrayWithKeyValuesArray:tabConCatalog];
@@ -34,16 +30,13 @@
 }
 
 /** 从网络获取Tabbar根控制器目录 */
-- (NSArray<RootTabItemModel *> *)fetchTabCatalonFromNet
-{
+- (NSArray<RootTabItemModel *> *)fetchTabCatalonFromNet{
     return @[];
 }
 
 /** 解析数据创建Tab的子控制器 */
-- (NSArray *)foundTabBarControllers
-{
+- (NSArray *)foundTabBarControllers{
     NSMutableArray *arrayTabControllers = [NSMutableArray array];
-    
     for (RootTabItemModel *tabModel in [self fetchTabCatalogFromBundle]) {
         UIViewController *tabController = [[[NSClassFromString(tabModel.class_name) class] alloc] init];
         tabController.title = tabModel.title;
@@ -53,12 +46,10 @@
         
         [arrayTabControllers addObject:[[BaseNavigationController alloc] initWithRootViewController:tabController]];
     }
-    
     return arrayTabControllers;
 }
 
-+ (instancetype)sharedInstance
-{
++ (instancetype)sharedInstance{
     static dispatch_once_t onceToken;
     static RootTabBarController *sharedInstance = nil;
     dispatch_once(&onceToken, ^{
@@ -67,8 +58,7 @@
     return sharedInstance;
 }
 
-- (instancetype)init
-{
+- (instancetype)init{
     self = [super init];
     if (self) {
         [self configAttribute];
@@ -78,14 +68,12 @@
     return self;
 }
 
-- (void)configAttribute
-{
+- (void)configAttribute{
     //    self.view.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1];
     //    [self setTabBarHidden:YES animated:YES];
 }
 
-- (void)resetTabBarItems
-{
+- (void)resetTabBarItems{
     for (UIView *barBtn in self.tabBar.subviews) {
         if ([barBtn isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             for (UIView *barBtnView in barBtn.subviews) {

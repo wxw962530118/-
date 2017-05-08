@@ -16,22 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController{
+    self = [super initWithRootViewController:rootViewController];
+    if (self) {
+        self.navigationBarHidden = YES;
+        
+        // 注册通知 （一些基础的通知， 在这里注册）
+        [self registObserverForLoginController];
+    }
+    return self;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)registObserverForLoginController{
+    /* 登录界面 弹出通知 */
+    //  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(presentLoginController:) name:TCNOTIFICATION_SHOULD_LOGIN object:nil];
 }
-*/
+
 
 @end
