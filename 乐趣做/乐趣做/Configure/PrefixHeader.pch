@@ -22,6 +22,8 @@
 #import "UIView+Categorys.h"
 #import "MacroMeasurement.h"
 #import "MacroEnvironment.h"
+#import "MacroFontSize.h"
+#import "HomeNetWorkManager.h"
 #import "UIImageView+WebCache.h"
 #import "BaseNavigationController.h"
 #import "RootTabBarController.h"

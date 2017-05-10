@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "HomeCategoryModel.h"
+#import "CategoryBrandModel.h"
 @interface CategoryCollectionCell : UICollectionViewCell
 
 @property (nonatomic, strong) HomeCategoryModel * model;
+
+@property (nonatomic, strong) CategoryBrandModel * brandModel;
 
 @end

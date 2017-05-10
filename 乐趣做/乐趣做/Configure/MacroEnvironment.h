@@ -34,7 +34,7 @@
 //#define VTInterFaceNet   @"http://api-test.vart.cc/4/"
 
 //测试接口
-#define VTInterFaceNet    @"http://itstest.letscharge.cn"
+#define InterFaceNet    @"http://api.lequz.com/v2/"
 
 /* ----------------------------------------- */
 
@@ -44,7 +44,7 @@
 
 #define NSLog(...) {}
 
-#define TCInterFaceNet @"http://admin.letscharge.cn"
+#define InterFaceNet @"http://api.lequz.com/v2/"
 
 /* ----------------------------------------- */
 

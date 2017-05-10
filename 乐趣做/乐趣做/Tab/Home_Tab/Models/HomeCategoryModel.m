@@ -10,4 +10,8 @@
 
 @implementation HomeCategoryModel
 
+//-(NSDictionary *)mj_replacedKeyFromPropertyName{
+//    return @{@"id" : @"ID",@"Description" : @"description"};
+//}
+
 @end

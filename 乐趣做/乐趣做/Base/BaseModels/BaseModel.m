@@ -10,8 +10,8 @@
 
 @implementation BaseModel
 
--(NSDictionary *)replacedKeyFromPropertyName{
-    return @{@"ID":@"id"};
++(NSDictionary *)mj_replacedKeyFromPropertyName{
+    return @{@"ID":@"id",@"Description" : @"description"};
 }
 
 @end

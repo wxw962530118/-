@@ -23,12 +23,10 @@
         self.adView = [[AIELoopView alloc]initWithURLs:self.loopArray didSelected:^(NSInteger index) {
             NSLog(@"当前选中的Index--%ld",index);
         }];
-        self.backgroundColor = [UIColor redColor];
         [self addSubview:self.adView];
         [self.adView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
         }];
-
     }
 }
 

@@ -13,7 +13,5 @@
 @interface HomeListModel : BaseModel
 @property (nonatomic, strong) NSArray <HomeCategoryModel *> *category;
 @property (nonatomic, strong) NSArray <HomeADModel *> *ad;
-
 @property (nonatomic, strong) NSArray <HomeSpecialModel *> *special;
-
 @end

@@ -12,7 +12,8 @@
 #define rowItemCount 4
 
 @interface CategoryCollectionView ()<UICollectionViewDelegate, UICollectionViewDataSource>
-@property (nonatomic, strong) NSArray  * categorys;//分类数据源
+
+@property (nonatomic, strong) NSArray <HomeCategoryModel *> * categorys;//分类数据源
 
 @end
 
@@ -65,8 +66,10 @@
 
 #pragma mark - UICollectionViewDidSelect
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-   
+    NSMutableDictionary * mulDic = [NSMutableDictionary dictionary];
+    [mulDic setObject:self.categorys[indexPath.item].ID forKey:@"categoryid"];
+    [mulDic setObject:@(indexPath.item) forKey:@"index"];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"UICollectionViewDidSelect" object:nil userInfo:mulDic];
 }
-
 
 @end

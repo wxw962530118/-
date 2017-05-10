@@ -84,6 +84,13 @@
 		ACEF0F3D1EC097CF000EC9AA /* CategoryCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F3B1EC097CF000EC9AA /* CategoryCollectionCell.m */; };
 		ACEF0F3E1EC097CF000EC9AA /* CategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACEF0F3C1EC097CF000EC9AA /* CategoryCollectionCell.xib */; };
 		ACEF0F411EC0981B000EC9AA /* CategoryCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F401EC0981B000EC9AA /* CategoryCollectionView.m */; };
+		ACEF0F671EC1CD73000EC9AA /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F661EC1CD73000EC9AA /* CategoryListViewController.m */; };
+		ACEF0F6C1EC2A1F7000EC9AA /* CategoryListLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F6B1EC2A1F7000EC9AA /* CategoryListLeftCell.m */; };
+		ACEF0F6F1EC2A204000EC9AA /* CategoryListRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F6E1EC2A204000EC9AA /* CategoryListRightCell.m */; };
+		ACEF0F731EC2B144000EC9AA /* CategoryListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F721EC2B144000EC9AA /* CategoryListModel.m */; };
+		ACEF0F761EC2B1CA000EC9AA /* CategoryFirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F751EC2B1CA000EC9AA /* CategoryFirstModel.m */; };
+		ACEF0F791EC2B1DE000EC9AA /* CategoryRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F781EC2B1DE000EC9AA /* CategoryRecommendModel.m */; };
+		ACEF0F7C1EC2B208000EC9AA /* CategoryBrandModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F7B1EC2B208000EC9AA /* CategoryBrandModel.m */; };
 		BE7B484B4ED096DB7911B9AE /* libPods-乐趣做.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 441A766C94BB7502A134BF03 /* libPods-乐趣做.a */; };
 /* End PBXBuildFile section */
 
@@ -257,6 +264,21 @@
 		ACEF0F3C1EC097CF000EC9AA /* CategoryCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCollectionCell.xib; sourceTree = "<group>"; };
 		ACEF0F3F1EC0981B000EC9AA /* CategoryCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCollectionView.h; sourceTree = "<group>"; };
 		ACEF0F401EC0981B000EC9AA /* CategoryCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionView.m; sourceTree = "<group>"; };
+		ACEF0F651EC1CD73000EC9AA /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
+		ACEF0F661EC1CD73000EC9AA /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
+		ACEF0F6A1EC2A1F7000EC9AA /* CategoryListLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListLeftCell.h; sourceTree = "<group>"; };
+		ACEF0F6B1EC2A1F7000EC9AA /* CategoryListLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListLeftCell.m; sourceTree = "<group>"; };
+		ACEF0F6D1EC2A204000EC9AA /* CategoryListRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListRightCell.h; sourceTree = "<group>"; };
+		ACEF0F6E1EC2A204000EC9AA /* CategoryListRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListRightCell.m; sourceTree = "<group>"; };
+		ACEF0F701EC2A2FE000EC9AA /* MacroFontSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroFontSize.h; sourceTree = "<group>"; };
+		ACEF0F711EC2B144000EC9AA /* CategoryListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListModel.h; sourceTree = "<group>"; };
+		ACEF0F721EC2B144000EC9AA /* CategoryListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListModel.m; sourceTree = "<group>"; };
+		ACEF0F741EC2B1CA000EC9AA /* CategoryFirstModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryFirstModel.h; sourceTree = "<group>"; };
+		ACEF0F751EC2B1CA000EC9AA /* CategoryFirstModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryFirstModel.m; sourceTree = "<group>"; };
+		ACEF0F771EC2B1DE000EC9AA /* CategoryRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryRecommendModel.h; sourceTree = "<group>"; };
+		ACEF0F781EC2B1DE000EC9AA /* CategoryRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryRecommendModel.m; sourceTree = "<group>"; };
+		ACEF0F7A1EC2B208000EC9AA /* CategoryBrandModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryBrandModel.h; sourceTree = "<group>"; };
+		ACEF0F7B1EC2B208000EC9AA /* CategoryBrandModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryBrandModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -835,6 +857,7 @@
 				AC88C4CE1EC0632D001F7210 /* MacroMeasurement.h */,
 				AC88C4CF1EC0633C001F7210 /* MacroEnvironment.h */,
 				AC88C4D11EC063C3001F7210 /* MacroColors.h */,
+				ACEF0F701EC2A2FE000EC9AA /* MacroFontSize.h */,
 				AC88C4D01EC0634A001F7210 /* APIKey.h */,
 			);
 			path = Configure;
@@ -869,6 +892,7 @@
 		ACEF0F091EC06F50000EC9AA /* Conreollers */ = {
 			isa = PBXGroup;
 			children = (
+				ACEF0F641EC1CD5E000EC9AA /* CategoryListViewController */,
 				ACEF0F0C1EC06F73000EC9AA /* ScanViewController */,
 				ACEF0F141EC07643000EC9AA /* SearchViewController */,
 				ACEF0F131EC07643000EC9AA /* HistoryViewController */,
@@ -915,6 +939,43 @@
 				ACEF0F161EC07669000EC9AA /* SearchViewController.m */,
 			);
 			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		ACEF0F641EC1CD5E000EC9AA /* CategoryListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F651EC1CD73000EC9AA /* CategoryListViewController.h */,
+				ACEF0F661EC1CD73000EC9AA /* CategoryListViewController.m */,
+				ACEF0F681EC2A1D3000EC9AA /* Models */,
+				ACEF0F691EC2A1D3000EC9AA /* Views */,
+			);
+			path = CategoryListViewController;
+			sourceTree = "<group>";
+		};
+		ACEF0F681EC2A1D3000EC9AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F711EC2B144000EC9AA /* CategoryListModel.h */,
+				ACEF0F721EC2B144000EC9AA /* CategoryListModel.m */,
+				ACEF0F741EC2B1CA000EC9AA /* CategoryFirstModel.h */,
+				ACEF0F751EC2B1CA000EC9AA /* CategoryFirstModel.m */,
+				ACEF0F771EC2B1DE000EC9AA /* CategoryRecommendModel.h */,
+				ACEF0F781EC2B1DE000EC9AA /* CategoryRecommendModel.m */,
+				ACEF0F7A1EC2B208000EC9AA /* CategoryBrandModel.h */,
+				ACEF0F7B1EC2B208000EC9AA /* CategoryBrandModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACEF0F691EC2A1D3000EC9AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F6A1EC2A1F7000EC9AA /* CategoryListLeftCell.h */,
+				ACEF0F6B1EC2A1F7000EC9AA /* CategoryListLeftCell.m */,
+				ACEF0F6D1EC2A204000EC9AA /* CategoryListRightCell.h */,
+				ACEF0F6E1EC2A204000EC9AA /* CategoryListRightCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1058,6 +1119,7 @@
 				AC88C4491EC04B43001F7210 /* XWCoolAnimator.m in Sources */,
 				AC88C4A71EC04FF2001F7210 /* BaseViewController.m in Sources */,
 				AC88C44B1EC04B43001F7210 /* XWFilterAnimator+XWBarSwipe.m in Sources */,
+				ACEF0F7C1EC2B208000EC9AA /* CategoryBrandModel.m in Sources */,
 				AC88C4431EC04B43001F7210 /* XWCoolAnimator+XWFold.m in Sources */,
 				AC88C43D1EC04B43001F7210 /* XWTransitionAnimator.m in Sources */,
 				AC88C3AD1EC04B43001F7210 /* AppDelegate.m in Sources */,
@@ -1076,11 +1138,16 @@
 				AC88C49A1EC04FC9001F7210 /* HotViewController.m in Sources */,
 				AC88C44F1EC04B43001F7210 /* XWFilterAnimator+XWMask.m in Sources */,
 				AC88C4421EC04B43001F7210 /* XWCoolAnimator+XWExplode.m in Sources */,
+				ACEF0F791EC2B1DE000EC9AA /* CategoryRecommendModel.m in Sources */,
+				ACEF0F6C1EC2A1F7000EC9AA /* CategoryListLeftCell.m in Sources */,
 				ACEF0F1A1EC07673000EC9AA /* HistoryViewController.m in Sources */,
+				ACEF0F671EC1CD73000EC9AA /* CategoryListViewController.m in Sources */,
 				ACEF0F1D1EC07B0D000EC9AA /* HomeCategoryCell.m in Sources */,
+				ACEF0F761EC2B1CA000EC9AA /* CategoryFirstModel.m in Sources */,
 				AC88C4521EC04B43001F7210 /* XWFilterAnimator+XWRipple.m in Sources */,
 				AC88C4561EC04B43001F7210 /* XWMagicMoveAnimator.m in Sources */,
 				ACEF0F121EC070D0000EC9AA /* ToolBaseClass.m in Sources */,
+				ACEF0F6F1EC2A204000EC9AA /* CategoryListRightCell.m in Sources */,
 				ACEF0F171EC07669000EC9AA /* SearchViewController.m in Sources */,
 				AC88C4481EC04B43001F7210 /* XWCoolAnimator+XWScanning.m in Sources */,
 				AC88C4551EC04B43001F7210 /* XWFilterTransitionView.m in Sources */,
@@ -1108,6 +1175,7 @@
 				ACEF0F331EC08FD8000EC9AA /* HomeListModel.m in Sources */,
 				ACEF0F2D1EC08DF5000EC9AA /* HomeNetWorkManager.m in Sources */,
 				ACEF0F231EC07B68000EC9AA /* HomeHotSubjectCell.m in Sources */,
+				ACEF0F731EC2B144000EC9AA /* CategoryListModel.m in Sources */,
 				AC88C4501EC04B43001F7210 /* XWFilterAnimator+XWMod.m in Sources */,
 				AC88C4531EC04B43001F7210 /* XWFilterAnimator+XWSwipe.m in Sources */,
 				ACEF0F411EC0981B000EC9AA /* CategoryCollectionView.m in Sources */,

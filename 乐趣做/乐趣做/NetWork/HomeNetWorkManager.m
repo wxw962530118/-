@@ -8,7 +8,9 @@
 
 #import "HomeNetWorkManager.h"
 
-#define  HomeCategorysUrl @"http://api.lequz.com/v2/sites"
+#define  HomeCategorysUrl @"sites"
+
+#define  CategorysListUrl @"categroys"
 
 @implementation HomeNetWorkManager
 +(instancetype)manager{
@@ -22,8 +24,20 @@
 
 
 -(NSURLSessionDataTask *)getHomeCategoryDataWithSuccess:(void (^)(id))success faile:(void (^)(NSURLSessionDataTask *, NSError *))faile{
-    NSString * URLString = HomeCategorysUrl;
+    NSString * URLString = [NSString stringWithFormat:@"%@%@",InterFaceNet,HomeCategorysUrl];
     NSURLSessionDataTask * task = [[NetWorkManager shareInstance]GET:URLString parameters:nil progress:0 success:^(id response) {
+        success(response);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        faile(task,error);
+    }];
+    return  task;
+}
+
+-(NSURLSessionDataTask *)getCategorysListWithCategoryid:(NSString *)categoryid success:(void (^)(id))success faile:(void (^)(NSURLSessionDataTask *, NSError *))faile{
+    NSString * URLString = [NSString stringWithFormat:@"%@%@",InterFaceNet,CategorysListUrl];
+    NSMutableDictionary * dic = [NSMutableDictionary dictionary];
+    [dic setObject:categoryid forKey:@"categoryid"];
+    NSURLSessionDataTask * task = [[NetWorkManager shareInstance]GET:URLString parameters:dic progress:0 success:^(id response) {
         success(response);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         faile(task,error);

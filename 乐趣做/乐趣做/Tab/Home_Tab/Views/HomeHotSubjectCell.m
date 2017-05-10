@@ -36,4 +36,12 @@
     [self.bigimageView sd_setImageWithURL:[NSURL URLWithString:model.banner]];
 }
 
+-(void)setFrame:(CGRect)frame{
+    CGFloat y = -3;
+    CGRect Frame = frame;
+    Frame.size.height += y;
+    frame = Frame;
+    [super setFrame:frame];
+}
+
 @end

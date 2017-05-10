@@ -14,6 +14,7 @@
 
 @implementation BaseNavigationController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -25,7 +26,8 @@
         // 设置全部导航栏透明度 26 160 239
 //        [self.navigationBar setBackgroundColor:SCColor(26 ,160 ,239)]; // 设置导航栏背景颜色
 //        [self.navigationBar setBackgroundColor:[UIColor redColor]];
-        self.navigationBar.barTintColor = SCColor(26 ,160 ,239);
+        [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:FontSize18}];
+        self.navigationBar.barTintColor = ColorMain;
         [self.navigationBar setTranslucent:YES];
     }
     return self;
@@ -56,11 +58,9 @@
                 //处理某些页面需要滚动tabbleView 时 动画隐藏tabbar
                 viewController.hidesBottomBarWhenPushed = NO;
             }
-            
         }
     }
     [super pushViewController:viewController animated:animated];
-    
 }
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated{

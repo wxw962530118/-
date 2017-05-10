@@ -14,15 +14,23 @@
 
 @implementation BaseViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+- (void)setNeedsStatusBarAppearanceUpdate{
+    [super setNeedsStatusBarAppearanceUpdate];
+}
+
 - (void)viewDidLoad {
-    [super viewDidLoad];
-   
+    [super viewDidLoad];   
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self setNavigationBar];
 }
+
 - (void)setNavigationBar {
     if (1 == self.navigationController.viewControllers.count) {
         self.navigationItem.leftBarButtonItem = nil;

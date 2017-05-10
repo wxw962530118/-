@@ -30,8 +30,15 @@
 
 -(void)setModel:(HomeCategoryModel *)model{
     _model = model;
+//    NSLog(@"ssc--%@",model.id);
     self.categoryLabel.text = model.name;
     [self.categoryImageView sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:nil];
+}
+
+-(void)setBrandModel:(CategoryBrandModel *)brandModel{
+    _brandModel = brandModel;
+    self.categoryLabel.text = brandModel.name;
+    [self.categoryImageView sd_setImageWithURL:[NSURL URLWithString:brandModel.logo] placeholderImage:nil];
 }
 
 @end

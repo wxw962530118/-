@@ -51,7 +51,7 @@
 - (void)addCustomNavigationBar{
     if (_navigationBar == nil) {
         _navigationBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, (64))];
-        _navigationBar.backgroundColor = SCColor(0, 0, 0);
+        _navigationBar.backgroundColor = Color(0, 0, 0);
         [self.view addSubview:_navigationBar];
         UIButton * backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         backBtn.frame = CGRectMake(0, (32), (50), (21));
@@ -68,7 +68,7 @@
         _titleNavLabel.textAlignment = NSTextAlignmentCenter;
         _titleNavLabel.text = @"扫一扫";
         _titleNavLabel.font = [UIFont systemFontOfSize:19];
-        _titleNavLabel.textColor = SCColorWhiteGround;
+        _titleNavLabel.textColor = ColorWhiteGround;
         [_navigationBar addSubview:_titleNavLabel];
         [_titleNavLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(_navigationBar.mas_centerX);

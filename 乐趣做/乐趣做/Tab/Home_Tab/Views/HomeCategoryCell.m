@@ -10,7 +10,9 @@
 #import "CategoryCollectionView.h"
 #import "HomeListModel.h"
 @interface HomeCategoryCell ()
+
 @property (nonatomic,assign) int itemPerRow;
+
 @property (nonatomic, strong) CategoryCollectionView * categoryCollectionView;
 
 @end
@@ -37,7 +39,15 @@
     if (model.category.count % 4 > 0) {
         row++;
     }
-    return  row * (96);
+    return  row * (96) + 5;
+}
+
+-(void)setFrame:(CGRect)frame{
+    CGFloat y = -5;
+    CGRect Frame = frame;
+    Frame.size.height += y;
+    frame = Frame;
+    [super setFrame:frame];
 }
 
 @end

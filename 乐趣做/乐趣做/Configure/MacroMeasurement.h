@@ -17,4 +17,7 @@
 
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height //屏幕高度
 
+//weakSelf
+#define     WS(weakSelf)                __weak  __typeof(&*self) weakSelf = self;
+
 #endif /* MacroMeasurement_h */

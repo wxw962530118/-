@@ -1,21 +1,19 @@
 //
-//  HomeCategoryModel.h
+//  CategoryFirstModel.h
 //  乐趣做
 //
-//  Created by 王新伟 on 2017/5/8.
+//  Created by 王新伟 on 2017/5/10.
 //  Copyright © 2017年 王新伟. All rights reserved.
 //
 
 #import "BaseModel.h"
-///  主页分类模型
-@interface HomeCategoryModel : BaseModel
+
+@interface CategoryFirstModel : BaseModel
 
 @property (nonatomic, copy) NSString * ID;
 
 @property (nonatomic, copy) NSString * name;
 
 @property (nonatomic, copy) NSString * icon;
-
-@property (nonatomic, assign) BOOL isSelectd;
 
 @end

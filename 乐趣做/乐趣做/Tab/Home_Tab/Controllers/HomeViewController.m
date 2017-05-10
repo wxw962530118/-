@@ -14,28 +14,23 @@
 #import "HomeCategoryCell.h"
 #import "HomeLoopViewCell.h"
 #import "HomeHotSubjectCell.h"
-#import "HomeNetWorkManager.h"
 #import "HomeListModel.h"
-
+#import "CategoryListViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSInteger  _currentPage;
 }
 
 @property (nonatomic, strong) HomeListModel *listModel;
-
-@property (nonatomic, strong) NSArray <HomeCategoryModel *> *categorys;//分类数据源
-@property (nonatomic, strong) NSArray <HomeADModel *> *ads;//广告轮播数据源
-@property (nonatomic, strong) NSMutableArray <HomeSpecialModel *> *specials;//专题数据源
+/**分类数据*/
+@property (nonatomic, strong) NSArray <HomeCategoryModel *> *categorys;
+/**广告轮播数据*/
+@property (nonatomic, strong) NSArray <HomeADModel *> *ads;
+/**专题数据*/
+@property (nonatomic, strong) NSMutableArray <HomeSpecialModel *> *specials;
+/**自定义导航栏*/
 @property (nonatomic, strong) HomeNavView * navView;
 
 @property (nonatomic, strong) UITableView * homeTableView;
-
-/***/
-@property (nonatomic, strong) NSMutableArray * homeCategoryArr;
-
-@property (nonatomic, strong) NSMutableArray * homeADArr;
-
-@property (nonatomic, strong) NSMutableArray * homeHotSubjectArr;
 
 @end
 
@@ -59,14 +54,26 @@
     [super viewDidLoad];
     [self.view addSubview:self.navView];
     [self loadHomeData];
+    [self addObserver];
+}
+
+-(void)addObserver{
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(info:) name:@"UICollectionViewDidSelect" object:nil];
+}
+
+-(void)info:(NSNotification *)noti{
+    CategoryListViewController * vc = [[CategoryListViewController alloc]init];
+    vc.selectIndex = [noti.userInfo[@"index"] integerValue];
+    vc.categoryid = noti.userInfo[@"categoryid"];
+    vc.categoryArray = self.categorys;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)loadHomeData{
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    __weak typeof(self) weakSelf = self;
+    WS(weakSelf)
     [[HomeNetWorkManager manager]getHomeCategoryDataWithSuccess:^(id respons) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-        NSLog(@"respons--%@",respons);
+        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         HomeListModel * listModel = [HomeListModel mj_objectWithKeyValues:respons[@"info"]];
         weakSelf.listModel = listModel;
         weakSelf.categorys = listModel.category;
@@ -74,7 +81,8 @@
         weakSelf.specials = [NSMutableArray arrayWithArray:listModel.special];
         [weakSelf.homeTableView reloadData];
     } faile:^(NSURLSessionDataTask *task, NSError *error) {
-        
+        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
+
     }];
 }
 
@@ -83,22 +91,18 @@
         _homeTableView = [[UITableView alloc]initWithFrame:CGRectMake(0,100, ScreenWidth, ScreenHeight - 100) style:UITableViewStyleGrouped];
         _homeTableView.delegate = self;
         _homeTableView.dataSource = self;
-        _homeTableView.backgroundColor = [UIColor whiteColor];
+        _homeTableView.backgroundColor = Color(237, 237, 237);
+        _homeTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:self.homeTableView];
     }
     return _homeTableView;
 }
 
 -(CGFloat )tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section == 0) {
-        if (indexPath.row == 0) {
-            return [HomeCategoryCell getCellHeightWithModel:self.listModel];
-        }else{
-            return 64;
-        }
-    }else{
-        return 100;
-    }
+    if (indexPath.section == 0)
+    if (indexPath.row == 0)  return [HomeCategoryCell getCellHeightWithModel:self.listModel];
+    else    return 64;
+    else    return 120;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -106,16 +110,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (section == 0) {
-        return 2;
-    }else{
-        return self.specials.count;
-    }
+    if (section == 0) return 2;
+    else return self.specials.count;
 }
 
 -(CGFloat )tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if (section == 0) return .1f;
-    else return 30;
+    if (section == 0) return 6;
+    else return 25;
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
@@ -123,7 +124,7 @@
         UIView * headerView = [[UIView alloc]init];
         UILabel * leftLabel = [[UILabel alloc]init];
         leftLabel.text = @"热门专题";
-        leftLabel.font = [UIFont systemFontOfSize:13];
+        leftLabel.font = [UIFont systemFontOfSize:14];
         [headerView addSubview:leftLabel];
         [leftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(headerView.mas_left).offset(15);
@@ -132,9 +133,9 @@
         
         UILabel * rightLabel = [[UILabel alloc]init];
         rightLabel.text = @"全部专题>>";
-        rightLabel.textColor = SCColor(26, 160,239);
+        rightLabel.textColor = Color(26, 160,239);
         rightLabel.userInteractionEnabled = YES;
-        rightLabel.font = [UIFont systemFontOfSize:13];
+        rightLabel.font = [UIFont systemFontOfSize:14];
         [headerView addSubview:rightLabel];
         [rightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(headerView.mas_right).offset(-15);

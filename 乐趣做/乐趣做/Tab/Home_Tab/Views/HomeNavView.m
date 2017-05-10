@@ -14,10 +14,8 @@
 
 @property (nonatomic, strong) UIImageView * bgImageView;
 
-/***/
 @property (nonatomic, strong) UIView * navButtonView;
 
-/**<#注释#>*/
 @property (nonatomic, strong) NavViewCallBack  callBack;
 
 @end
@@ -44,8 +42,8 @@
     if (_bgImageView == nil) {
         _bgImageView = [[UIImageView alloc]init];
         _bgImageView.userInteractionEnabled = YES;
-        _bgImageView.image = [UIImage imageNamed:@"NaviBack"];
-        _bgImageView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,100);
+        _bgImageView.image = [ToolBaseClass imageWithColor:ColorMain];
+        _bgImageView.frame = CGRectMake(0, 0, ScreenWidth ,100);
     }
     return _bgImageView;
 }
