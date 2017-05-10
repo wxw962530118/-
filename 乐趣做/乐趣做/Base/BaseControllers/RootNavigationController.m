@@ -7,7 +7,7 @@
 //
 
 #import "RootNavigationController.h"
-
+#import "LoginViewController.h"
 @interface RootNavigationController ()
 
 @end
@@ -31,8 +31,12 @@
 
 - (void)registObserverForLoginController{
     /* 登录界面 弹出通知 */
-    //  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(presentLoginController:) name:TCNOTIFICATION_SHOULD_LOGIN object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(presentLoginController:) name:NOTIFICATION_SHOULD_LOGIN object:nil];
 }
 
+- (void)presentLoginController:(NSNotification *)not{
+    LoginViewController *login = [[LoginViewController alloc] init];
+    [self presentViewController:[[BaseNavigationController alloc] initWithRootViewController:login] animated:YES completion:nil];
+}
 
 @end

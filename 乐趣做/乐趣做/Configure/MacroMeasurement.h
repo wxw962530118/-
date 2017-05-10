@@ -13,9 +13,7 @@
 
 #define kPrivateErrorMessage @"com.aiep.ServerCallBackError.message"
 
-#define ScreenWidth  [UIScreen mainScreen].bounds.size.width //屏幕宽度
-
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height //屏幕高度
+#define TCJpushRegistrationID           @"JpushRegistrationID"
 
 //weakSelf
 #define     WS(weakSelf)                __weak  __typeof(&*self) weakSelf = self;

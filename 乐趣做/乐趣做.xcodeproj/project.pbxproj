@@ -91,6 +91,17 @@
 		ACEF0F761EC2B1CA000EC9AA /* CategoryFirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F751EC2B1CA000EC9AA /* CategoryFirstModel.m */; };
 		ACEF0F791EC2B1DE000EC9AA /* CategoryRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F781EC2B1DE000EC9AA /* CategoryRecommendModel.m */; };
 		ACEF0F7C1EC2B208000EC9AA /* CategoryBrandModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F7B1EC2B208000EC9AA /* CategoryBrandModel.m */; };
+		ACEF0F871EC2DA48000EC9AA /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F861EC2DA48000EC9AA /* RegisterViewController.m */; };
+		ACEF0F8A1EC2DA53000EC9AA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F891EC2DA53000EC9AA /* LoginViewController.m */; };
+		ACEF0F8D1EC2DB6C000EC9AA /* LoginBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F8C1EC2DB6C000EC9AA /* LoginBottomView.m */; };
+		ACEF0F931EC2DC47000EC9AA /* LoginPhoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F921EC2DC47000EC9AA /* LoginPhoneCell.m */; };
+		ACEF0F961EC2DC53000EC9AA /* LoginPassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F951EC2DC53000EC9AA /* LoginPassCell.m */; };
+		ACEF0F9A1EC2DD7B000EC9AA /* MajorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F991EC2DD7B000EC9AA /* MajorButton.m */; };
+		ACEF0F9E1EC2DF9D000EC9AA /* ScreeAdaptation.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F9D1EC2DF9D000EC9AA /* ScreeAdaptation.m */; };
+		ACEF0FA11EC2E503000EC9AA /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0FA01EC2E503000EC9AA /* AccountManager.m */; };
+		ACEF0FA41EC2E552000EC9AA /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0FA31EC2E552000EC9AA /* Account.m */; };
+		ACEF0FA71EC2E694000EC9AA /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0FA61EC2E694000EC9AA /* Avatar.m */; };
+		ACEF0FAA1EC2E997000EC9AA /* MacroNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0FA91EC2E997000EC9AA /* MacroNotifications.m */; };
 		BE7B484B4ED096DB7911B9AE /* libPods-乐趣做.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 441A766C94BB7502A134BF03 /* libPods-乐趣做.a */; };
 /* End PBXBuildFile section */
 
@@ -279,6 +290,28 @@
 		ACEF0F781EC2B1DE000EC9AA /* CategoryRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryRecommendModel.m; sourceTree = "<group>"; };
 		ACEF0F7A1EC2B208000EC9AA /* CategoryBrandModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryBrandModel.h; sourceTree = "<group>"; };
 		ACEF0F7B1EC2B208000EC9AA /* CategoryBrandModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryBrandModel.m; sourceTree = "<group>"; };
+		ACEF0F851EC2DA48000EC9AA /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		ACEF0F861EC2DA48000EC9AA /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		ACEF0F881EC2DA53000EC9AA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		ACEF0F891EC2DA53000EC9AA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		ACEF0F8B1EC2DB6C000EC9AA /* LoginBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginBottomView.h; sourceTree = "<group>"; };
+		ACEF0F8C1EC2DB6C000EC9AA /* LoginBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginBottomView.m; sourceTree = "<group>"; };
+		ACEF0F911EC2DC47000EC9AA /* LoginPhoneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPhoneCell.h; sourceTree = "<group>"; };
+		ACEF0F921EC2DC47000EC9AA /* LoginPhoneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPhoneCell.m; sourceTree = "<group>"; };
+		ACEF0F941EC2DC53000EC9AA /* LoginPassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPassCell.h; sourceTree = "<group>"; };
+		ACEF0F951EC2DC53000EC9AA /* LoginPassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPassCell.m; sourceTree = "<group>"; };
+		ACEF0F981EC2DD7B000EC9AA /* MajorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MajorButton.h; sourceTree = "<group>"; };
+		ACEF0F991EC2DD7B000EC9AA /* MajorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MajorButton.m; sourceTree = "<group>"; };
+		ACEF0F9C1EC2DF9D000EC9AA /* ScreeAdaptation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreeAdaptation.h; sourceTree = "<group>"; };
+		ACEF0F9D1EC2DF9D000EC9AA /* ScreeAdaptation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreeAdaptation.m; sourceTree = "<group>"; };
+		ACEF0F9F1EC2E503000EC9AA /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
+		ACEF0FA01EC2E503000EC9AA /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		ACEF0FA21EC2E552000EC9AA /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		ACEF0FA31EC2E552000EC9AA /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		ACEF0FA51EC2E694000EC9AA /* Avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
+		ACEF0FA61EC2E694000EC9AA /* Avatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
+		ACEF0FA81EC2E997000EC9AA /* MacroNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroNotifications.h; sourceTree = "<group>"; };
+		ACEF0FA91EC2E997000EC9AA /* MacroNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroNotifications.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +366,8 @@
 			children = (
 				AC88C23C1EC04B42001F7210 /* APP */,
 				AC88C2451EC04B42001F7210 /* Tab */,
+				ACEF0F811EC2DA34000EC9AA /* Register */,
+				ACEF0F7D1EC2DA0B000EC9AA /* Login */,
 				AC88C23F1EC04B42001F7210 /* Base */,
 				AC88C4BE1EC061D9001F7210 /* Categorys */,
 				AC88C4861EC04C93001F7210 /* Configure */,
@@ -380,6 +415,8 @@
 		AC88C2401EC04B42001F7210 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				ACEF0F9F1EC2E503000EC9AA /* AccountManager.h */,
+				ACEF0FA01EC2E503000EC9AA /* AccountManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -408,6 +445,8 @@
 		AC88C2431EC04B42001F7210 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				ACEF0F9B1EC2DF73000EC9AA /* Adaptation(适配) */,
+				ACEF0F971EC2DD65000EC9AA /* Components(控件库) */,
 				AC88C4B41EC061B0001F7210 /* LoopView */,
 			);
 			path = Public;
@@ -859,6 +898,8 @@
 				AC88C4D11EC063C3001F7210 /* MacroColors.h */,
 				ACEF0F701EC2A2FE000EC9AA /* MacroFontSize.h */,
 				AC88C4D01EC0634A001F7210 /* APIKey.h */,
+				ACEF0FA81EC2E997000EC9AA /* MacroNotifications.h */,
+				ACEF0FA91EC2E997000EC9AA /* MacroNotifications.m */,
 			);
 			path = Configure;
 			sourceTree = "<group>";
@@ -976,6 +1017,100 @@
 				ACEF0F6E1EC2A204000EC9AA /* CategoryListRightCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ACEF0F7D1EC2DA0B000EC9AA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F7E1EC2DA0B000EC9AA /* Controllers */,
+				ACEF0F7F1EC2DA0B000EC9AA /* Modles */,
+				ACEF0F801EC2DA0B000EC9AA /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ACEF0F7E1EC2DA0B000EC9AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F881EC2DA53000EC9AA /* LoginViewController.h */,
+				ACEF0F891EC2DA53000EC9AA /* LoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ACEF0F7F1EC2DA0B000EC9AA /* Modles */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0FA21EC2E552000EC9AA /* Account.h */,
+				ACEF0FA31EC2E552000EC9AA /* Account.m */,
+				ACEF0FA51EC2E694000EC9AA /* Avatar.h */,
+				ACEF0FA61EC2E694000EC9AA /* Avatar.m */,
+			);
+			path = Modles;
+			sourceTree = "<group>";
+		};
+		ACEF0F801EC2DA0B000EC9AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F8B1EC2DB6C000EC9AA /* LoginBottomView.h */,
+				ACEF0F8C1EC2DB6C000EC9AA /* LoginBottomView.m */,
+				ACEF0F911EC2DC47000EC9AA /* LoginPhoneCell.h */,
+				ACEF0F921EC2DC47000EC9AA /* LoginPhoneCell.m */,
+				ACEF0F941EC2DC53000EC9AA /* LoginPassCell.h */,
+				ACEF0F951EC2DC53000EC9AA /* LoginPassCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACEF0F811EC2DA34000EC9AA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F821EC2DA34000EC9AA /* Controllers */,
+				ACEF0F831EC2DA34000EC9AA /* Modles */,
+				ACEF0F841EC2DA34000EC9AA /* Views */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		ACEF0F821EC2DA34000EC9AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F851EC2DA48000EC9AA /* RegisterViewController.h */,
+				ACEF0F861EC2DA48000EC9AA /* RegisterViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ACEF0F831EC2DA34000EC9AA /* Modles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modles;
+			sourceTree = "<group>";
+		};
+		ACEF0F841EC2DA34000EC9AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACEF0F971EC2DD65000EC9AA /* Components(控件库) */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F981EC2DD7B000EC9AA /* MajorButton.h */,
+				ACEF0F991EC2DD7B000EC9AA /* MajorButton.m */,
+			);
+			path = "Components(控件库)";
+			sourceTree = "<group>";
+		};
+		ACEF0F9B1EC2DF73000EC9AA /* Adaptation(适配) */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF0F9C1EC2DF9D000EC9AA /* ScreeAdaptation.h */,
+				ACEF0F9D1EC2DF9D000EC9AA /* ScreeAdaptation.m */,
+			);
+			path = "Adaptation(适配)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1133,6 +1268,7 @@
 				ACEF0F361EC08FE8000EC9AA /* HomeADModel.m in Sources */,
 				AC88C4971EC04FB7001F7210 /* HomeViewController.m in Sources */,
 				ACEF0F201EC07B48000EC9AA /* HomeLoopViewCell.m in Sources */,
+				ACEF0F961EC2DC53000EC9AA /* LoginPassCell.m in Sources */,
 				AC88C4AC1EC05002001F7210 /* ShopsViewController.m in Sources */,
 				AC88C4451EC04B43001F7210 /* XWCoolAnimator+XWMiddlePageFlip.m in Sources */,
 				AC88C49A1EC04FC9001F7210 /* HotViewController.m in Sources */,
@@ -1140,6 +1276,7 @@
 				AC88C4421EC04B43001F7210 /* XWCoolAnimator+XWExplode.m in Sources */,
 				ACEF0F791EC2B1DE000EC9AA /* CategoryRecommendModel.m in Sources */,
 				ACEF0F6C1EC2A1F7000EC9AA /* CategoryListLeftCell.m in Sources */,
+				ACEF0FA11EC2E503000EC9AA /* AccountManager.m in Sources */,
 				ACEF0F1A1EC07673000EC9AA /* HistoryViewController.m in Sources */,
 				ACEF0F671EC1CD73000EC9AA /* CategoryListViewController.m in Sources */,
 				ACEF0F1D1EC07B0D000EC9AA /* HomeCategoryCell.m in Sources */,
@@ -1148,22 +1285,30 @@
 				AC88C4561EC04B43001F7210 /* XWMagicMoveAnimator.m in Sources */,
 				ACEF0F121EC070D0000EC9AA /* ToolBaseClass.m in Sources */,
 				ACEF0F6F1EC2A204000EC9AA /* CategoryListRightCell.m in Sources */,
+				ACEF0FAA1EC2E997000EC9AA /* MacroNotifications.m in Sources */,
 				ACEF0F171EC07669000EC9AA /* SearchViewController.m in Sources */,
 				AC88C4481EC04B43001F7210 /* XWCoolAnimator+XWScanning.m in Sources */,
+				ACEF0F871EC2DA48000EC9AA /* RegisterViewController.m in Sources */,
 				AC88C4551EC04B43001F7210 /* XWFilterTransitionView.m in Sources */,
 				AC88C4471EC04B43001F7210 /* XWCoolAnimator+XWPortal.m in Sources */,
 				AC88C4AF1EC054C3001F7210 /* RootTabItemModel.m in Sources */,
+				ACEF0FA41EC2E552000EC9AA /* Account.m in Sources */,
 				ACEF0F3D1EC097CF000EC9AA /* CategoryCollectionCell.m in Sources */,
 				AC88C4BD1EC061B0001F7210 /* AIELoopViewLayout.m in Sources */,
 				AC88C4B21EC0614E001F7210 /* HomeNavView.m in Sources */,
 				AC88C4461EC04B43001F7210 /* XWCoolAnimator+XWPageFlip.m in Sources */,
 				ACEF0F301EC08E86000EC9AA /* HomeCategoryModel.m in Sources */,
 				AC88C4A91EC04FF2001F7210 /* RootTabBarController.m in Sources */,
+				ACEF0F8D1EC2DB6C000EC9AA /* LoginBottomView.m in Sources */,
+				ACEF0F9E1EC2DF9D000EC9AA /* ScreeAdaptation.m in Sources */,
 				AC88C4A81EC04FF2001F7210 /* RootNavigationController.m in Sources */,
+				ACEF0F9A1EC2DD7B000EC9AA /* MajorButton.m in Sources */,
 				AC88C4BC1EC061B0001F7210 /* AIELoopViewCell.m in Sources */,
+				ACEF0F8A1EC2DA53000EC9AA /* LoginViewController.m in Sources */,
 				AC88C44D1EC04B43001F7210 /* XWFilterAnimator+XWCopyMachine.m in Sources */,
 				ACEF0F0F1EC06FB3000EC9AA /* ScanQrCodeController.m in Sources */,
 				AC88C4D41EC06433001F7210 /* BaseModel.m in Sources */,
+				ACEF0FA71EC2E694000EC9AA /* Avatar.m in Sources */,
 				AC88C4511EC04B43001F7210 /* XWFilterAnimator+XWPageCurl.m in Sources */,
 				AC88C49D1EC04FE0001F7210 /* PersonalViewController.m in Sources */,
 				AC88C4CA1EC06252001F7210 /* UIView+Categorys.m in Sources */,
@@ -1181,6 +1326,7 @@
 				ACEF0F411EC0981B000EC9AA /* CategoryCollectionView.m in Sources */,
 				ACEF0F2A1EC08D9F000EC9AA /* NetWorkManager.m in Sources */,
 				AC88C4441EC04B43001F7210 /* XWCoolAnimator+XWLines.m in Sources */,
+				ACEF0F931EC2DC47000EC9AA /* LoginPhoneCell.m in Sources */,
 				AC88C44C1EC04B43001F7210 /* XWFilterAnimator+XWBoxBlur.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

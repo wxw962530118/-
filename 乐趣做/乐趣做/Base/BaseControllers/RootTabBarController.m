@@ -8,6 +8,7 @@
 
 #import "RootTabBarController.h"
 #import "RootTabItemModel.h"
+#import "RootNavigationController.h"
 /** TabBar根控制器目录 */
 #define TabControllerCatalog @"TabCatalog"
 
@@ -88,6 +89,16 @@
             }
         }
     }
+}
+
+//
+//处理因为隐藏导航栏后 点击 tabbar 切换 时 控制器 顶部会出现跳动的问题
+-(void)setSelectedViewController:(__kindof UIViewController *)selectedViewController{
+    UINavigationController * nav = (UINavigationController *)selectedViewController;
+    if ([[nav.viewControllers firstObject] isKindOfClass:NSClassFromString(@"PersonalViewController")]) {
+        POST_NOTIFICATION_NAMED_(NOTIFICATION_SHOULD_LOGIN);
+    }
+    [super setSelectedViewController:selectedViewController];
 }
 
 @end
