@@ -37,6 +37,7 @@
         model.isSelectd = NO;
     }
     self.categoryArray[self.selectIndex].isSelectd = YES;
+    [self.leftTableView reloadData];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -73,7 +74,7 @@
         [self.view addSubview:_rightCollectionView];
         [_rightCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.leftTableView.mas_right).offset(0);
-            make.top.equalTo(self.leftTableView.mas_top);
+            make.top.equalTo(self.leftTableView.mas_top).offset(64);
             make.right.equalTo(self.view.mas_right);
             make.bottom.equalTo(self.view.mas_bottom);
         }];
@@ -93,7 +94,7 @@
         [self.view addSubview:_leftTableView];
         [_leftTableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.view.mas_left);
-            make.top.equalTo(self.view.mas_top).offset(64);
+            make.top.equalTo(self.view.mas_top);
             make.width.mas_equalTo(64);
             make.bottom.equalTo(self.view.mas_bottom);
         }];
