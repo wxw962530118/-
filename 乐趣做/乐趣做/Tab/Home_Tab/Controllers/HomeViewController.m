@@ -16,6 +16,7 @@
 #import "HomeHotSubjectCell.h"
 #import "HomeListModel.h"
 #import "CategoryListViewController.h"
+#import "HomeCategoryCacheManager.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSInteger  _currentPage;
 }
@@ -72,17 +73,19 @@
 -(void)loadHomeData{
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     WS(weakSelf)
-    [[HomeNetWorkManager manager]getHomeCategoryDataWithSuccess:^(id respons) {
+    [[HomeNetWorkManager shareManager]getHomeCategoryDataWithSuccess:^(id respons) {
         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         HomeListModel * listModel = [HomeListModel mj_objectWithKeyValues:respons[@"info"]];
         weakSelf.listModel = listModel;
         weakSelf.categorys = listModel.category;
+        [HomeCategoryCacheManager saveFitnessHostOriginalData:weakSelf.categorys catalog:HomeCategory_Catalog];
         weakSelf.ads = listModel.ad;
         weakSelf.specials = [NSMutableArray arrayWithArray:listModel.special];
         [weakSelf.homeTableView reloadData];
+        [weakSelf.homeTableView.mj_header endRefreshing];
     } faile:^(NSURLSessionDataTask *task, NSError *error) {
         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
-
+        [weakSelf.homeTableView.mj_header endRefreshing];
     }];
 }
 
@@ -94,6 +97,11 @@
         _homeTableView.backgroundColor = Color(237, 237, 237);
         _homeTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:self.homeTableView];
+        WS(weakSelf)
+        _homeTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            _currentPage = 1;
+            [weakSelf loadHomeData];
+        }];
     }
     return _homeTableView;
 }

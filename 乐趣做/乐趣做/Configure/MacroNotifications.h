@@ -75,6 +75,10 @@ UIKIT_EXTERN NSString *const NOTIFICATION_RELOCATION_FAILD;
 UIKIT_EXTERN NSString *const NOTIFICATION_RECEIVED_REMOTE_PUSH;
 /** 通知: 重置密码成功通知 */
 UIKIT_EXTERN NSString *const NOTIFICATION_RESETPAYPASSWORD;
+/** 通知: 滑动 下面 collectionView的通知 改变 标题的选中文字*/
+UIKIT_EXTERN NSString *const NOTIFICATION_SLIDERBOTTOMSEND;
+/** 通知: 点击item的通知*/
+UIKIT_EXTERN NSString * const NOTIFICATION_TOUCHTOPSENDNOTI;
 
 @interface MacroNotifications : NSObject
 

@@ -37,5 +37,7 @@ NSString *const NOTIFICATION_RECEIVED_REMOTE_PUSH     = @"Notification_Received_
 NSString *const NOTIFICATION_RESETPAYPASSWORD         = @"Notification_ResetPayPassWord";
 NSString *const NOTIFICATION_NAMECERTIFICATION        = @"Notification_NameCertification";
 
+NSString *const NOTIFICATION_SLIDERBOTTOMSEND         = @"NOtification_SliderBottomSend";
+NSString *const NOTIFICATION_TOUCHTOPSENDNOTI         = @"NOtification_TouchTopSendNoti";
 
 @end

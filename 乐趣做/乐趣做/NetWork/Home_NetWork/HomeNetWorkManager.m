@@ -13,7 +13,7 @@
 #define  CategorysListUrl @"categroys"
 
 @implementation HomeNetWorkManager
-+(instancetype)manager{
++(instancetype)shareManager{
     static HomeNetWorkManager * manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

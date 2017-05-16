@@ -49,7 +49,7 @@
 -(void)loadData{
     WS(weakSelf)
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [[HomeNetWorkManager manager]getCategorysListWithCategoryid:self.categoryid success:^(id respons) {
+    [[HomeNetWorkManager shareManager]getCategorysListWithCategoryid:self.categoryid success:^(id respons) {
         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         weakSelf.listModel = [CategoryListModel mj_objectWithKeyValues:respons[@"info"]];
         weakSelf.recommend = weakSelf.listModel.recommend;

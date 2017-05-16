@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC27C5E51ECA93C60030039B /* HorizontalCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5E01ECA93C60030039B /* HorizontalCollectionView.m */; };
+		AC27C5E61ECA93C60030039B /* HorizontalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5E21ECA93C60030039B /* HorizontalCollectionViewCell.m */; };
+		AC27C5E71ECA93C60030039B /* HorizontalFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5E41ECA93C60030039B /* HorizontalFlowLayout.m */; };
+		AC27C5EA1ECA93E60030039B /* TopCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5E91ECA93E60030039B /* TopCollectionView.m */; };
+		AC27C5ED1ECA93F90030039B /* TopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5EC1ECA93F90030039B /* TopCollectionViewCell.m */; };
+		AC27C5F01ECA940C0030039B /* TopCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5EF1ECA940C0030039B /* TopCollectionViewFlowLayout.m */; };
+		AC27C5F31ECA96CB0030039B /* BottomCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5F21ECA96CB0030039B /* BottomCollectionViewFlowLayout.m */; };
+		AC27C5F61ECA96E40030039B /* BottomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5F51ECA96E40030039B /* BottomCollectionView.m */; };
+		AC27C5F91ECA96F70030039B /* BottomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5F81ECA96F70030039B /* BottomCollectionViewCell.m */; };
+		AC27C6001ECA9B390030039B /* HomeNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C5FC1ECA9B390030039B /* HomeNetWorkManager.m */; };
+		AC27C6031ECA9B510030039B /* HotNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C6021ECA9B510030039B /* HotNetWorkManager.m */; };
+		AC27C6091ECAA4C20030039B /* HomeCategoryCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C6081ECAA4C20030039B /* HomeCategoryCacheManager.m */; };
+		AC27C60C1ECAD6820030039B /* HotListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C60B1ECAD6820030039B /* HotListModel.m */; };
+		AC27C60F1ECAD8C00030039B /* ShopNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C60E1ECAD8C00030039B /* ShopNetWorkManager.m */; };
+		AC27C6121ECADA550030039B /* ShopListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27C6111ECADA550030039B /* ShopListModel.m */; };
 		AC88C2271EC049AA001F7210 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC88C2261EC049AA001F7210 /* main.m */; };
 		AC88C2321EC049AA001F7210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC88C2311EC049AA001F7210 /* Assets.xcassets */; };
 		AC88C3AD1EC04B43001F7210 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC88C23E1EC04B42001F7210 /* AppDelegate.m */; };
@@ -76,7 +91,6 @@
 		ACEF0F201EC07B48000EC9AA /* HomeLoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F1F1EC07B48000EC9AA /* HomeLoopViewCell.m */; };
 		ACEF0F231EC07B68000EC9AA /* HomeHotSubjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F221EC07B68000EC9AA /* HomeHotSubjectCell.m */; };
 		ACEF0F2A1EC08D9F000EC9AA /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F291EC08D9F000EC9AA /* NetWorkManager.m */; };
-		ACEF0F2D1EC08DF5000EC9AA /* HomeNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F2C1EC08DF5000EC9AA /* HomeNetWorkManager.m */; };
 		ACEF0F301EC08E86000EC9AA /* HomeCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F2F1EC08E86000EC9AA /* HomeCategoryModel.m */; };
 		ACEF0F331EC08FD8000EC9AA /* HomeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F321EC08FD8000EC9AA /* HomeListModel.m */; };
 		ACEF0F361EC08FE8000EC9AA /* HomeADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF0F351EC08FE8000EC9AA /* HomeADModel.m */; };
@@ -109,6 +123,36 @@
 		05A43E7898C802DEC1A69D61 /* Pods-乐趣做.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-乐趣做.release.xcconfig"; path = "Pods/Target Support Files/Pods-乐趣做/Pods-乐趣做.release.xcconfig"; sourceTree = "<group>"; };
 		441A766C94BB7502A134BF03 /* libPods-乐趣做.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-乐趣做.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B02B611039130BC4828523F /* Pods-乐趣做.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-乐趣做.debug.xcconfig"; path = "Pods/Target Support Files/Pods-乐趣做/Pods-乐趣做.debug.xcconfig"; sourceTree = "<group>"; };
+		AC27C5DF1ECA93C60030039B /* HorizontalCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalCollectionView.h; sourceTree = "<group>"; };
+		AC27C5E01ECA93C60030039B /* HorizontalCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalCollectionView.m; sourceTree = "<group>"; };
+		AC27C5E11ECA93C60030039B /* HorizontalCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalCollectionViewCell.h; sourceTree = "<group>"; };
+		AC27C5E21ECA93C60030039B /* HorizontalCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalCollectionViewCell.m; sourceTree = "<group>"; };
+		AC27C5E31ECA93C60030039B /* HorizontalFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalFlowLayout.h; sourceTree = "<group>"; };
+		AC27C5E41ECA93C60030039B /* HorizontalFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalFlowLayout.m; sourceTree = "<group>"; };
+		AC27C5E81ECA93E60030039B /* TopCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCollectionView.h; sourceTree = "<group>"; };
+		AC27C5E91ECA93E60030039B /* TopCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionView.m; sourceTree = "<group>"; };
+		AC27C5EB1ECA93F90030039B /* TopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCollectionViewCell.h; sourceTree = "<group>"; };
+		AC27C5EC1ECA93F90030039B /* TopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionViewCell.m; sourceTree = "<group>"; };
+		AC27C5EE1ECA940C0030039B /* TopCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		AC27C5EF1ECA940C0030039B /* TopCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		AC27C5F11ECA96CB0030039B /* BottomCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		AC27C5F21ECA96CB0030039B /* BottomCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		AC27C5F41ECA96E40030039B /* BottomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomCollectionView.h; sourceTree = "<group>"; };
+		AC27C5F51ECA96E40030039B /* BottomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomCollectionView.m; sourceTree = "<group>"; };
+		AC27C5F71ECA96F70030039B /* BottomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomCollectionViewCell.h; sourceTree = "<group>"; };
+		AC27C5F81ECA96F70030039B /* BottomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomCollectionViewCell.m; sourceTree = "<group>"; };
+		AC27C5FB1ECA9B390030039B /* HomeNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNetWorkManager.h; sourceTree = "<group>"; };
+		AC27C5FC1ECA9B390030039B /* HomeNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNetWorkManager.m; sourceTree = "<group>"; };
+		AC27C6011ECA9B510030039B /* HotNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotNetWorkManager.h; sourceTree = "<group>"; };
+		AC27C6021ECA9B510030039B /* HotNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotNetWorkManager.m; sourceTree = "<group>"; };
+		AC27C6071ECAA4C20030039B /* HomeCategoryCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCategoryCacheManager.h; sourceTree = "<group>"; };
+		AC27C6081ECAA4C20030039B /* HomeCategoryCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCategoryCacheManager.m; sourceTree = "<group>"; };
+		AC27C60A1ECAD6820030039B /* HotListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotListModel.h; sourceTree = "<group>"; };
+		AC27C60B1ECAD6820030039B /* HotListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotListModel.m; sourceTree = "<group>"; };
+		AC27C60D1ECAD8C00030039B /* ShopNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopNetWorkManager.h; sourceTree = "<group>"; };
+		AC27C60E1ECAD8C00030039B /* ShopNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopNetWorkManager.m; sourceTree = "<group>"; };
+		AC27C6101ECADA550030039B /* ShopListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopListModel.h; sourceTree = "<group>"; };
+		AC27C6111ECADA550030039B /* ShopListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopListModel.m; sourceTree = "<group>"; };
 		AC88C2221EC049AA001F7210 /* 乐趣做.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "乐趣做.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC88C2261EC049AA001F7210 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC88C2311EC049AA001F7210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -260,8 +304,6 @@
 		ACEF0F221EC07B68000EC9AA /* HomeHotSubjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHotSubjectCell.m; sourceTree = "<group>"; };
 		ACEF0F281EC08D9F000EC9AA /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		ACEF0F291EC08D9F000EC9AA /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
-		ACEF0F2B1EC08DF5000EC9AA /* HomeNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNetWorkManager.h; sourceTree = "<group>"; };
-		ACEF0F2C1EC08DF5000EC9AA /* HomeNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNetWorkManager.m; sourceTree = "<group>"; };
 		ACEF0F2E1EC08E86000EC9AA /* HomeCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCategoryModel.h; sourceTree = "<group>"; };
 		ACEF0F2F1EC08E86000EC9AA /* HomeCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCategoryModel.m; sourceTree = "<group>"; };
 		ACEF0F311EC08FD8000EC9AA /* HomeListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeListModel.h; sourceTree = "<group>"; };
@@ -343,6 +385,79 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC27C5DC1ECA93C60030039B /* 上 */ = {
+			isa = PBXGroup;
+			children = (
+				AC27C5E81ECA93E60030039B /* TopCollectionView.h */,
+				AC27C5E91ECA93E60030039B /* TopCollectionView.m */,
+				AC27C5EB1ECA93F90030039B /* TopCollectionViewCell.h */,
+				AC27C5EC1ECA93F90030039B /* TopCollectionViewCell.m */,
+				AC27C5EE1ECA940C0030039B /* TopCollectionViewFlowLayout.h */,
+				AC27C5EF1ECA940C0030039B /* TopCollectionViewFlowLayout.m */,
+			);
+			path = "上";
+			sourceTree = "<group>";
+		};
+		AC27C5DD1ECA93C60030039B /* 下 */ = {
+			isa = PBXGroup;
+			children = (
+				AC27C5F41ECA96E40030039B /* BottomCollectionView.h */,
+				AC27C5F51ECA96E40030039B /* BottomCollectionView.m */,
+				AC27C5F71ECA96F70030039B /* BottomCollectionViewCell.h */,
+				AC27C5F81ECA96F70030039B /* BottomCollectionViewCell.m */,
+				AC27C5F11ECA96CB0030039B /* BottomCollectionViewFlowLayout.h */,
+				AC27C5F21ECA96CB0030039B /* BottomCollectionViewFlowLayout.m */,
+			);
+			path = "下";
+			sourceTree = "<group>";
+		};
+		AC27C5DE1ECA93C60030039B /* HorizontalCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				AC27C5DF1ECA93C60030039B /* HorizontalCollectionView.h */,
+				AC27C5E01ECA93C60030039B /* HorizontalCollectionView.m */,
+				AC27C5E11ECA93C60030039B /* HorizontalCollectionViewCell.h */,
+				AC27C5E21ECA93C60030039B /* HorizontalCollectionViewCell.m */,
+				AC27C5E31ECA93C60030039B /* HorizontalFlowLayout.h */,
+				AC27C5E41ECA93C60030039B /* HorizontalFlowLayout.m */,
+			);
+			path = HorizontalCollectionView;
+			sourceTree = "<group>";
+		};
+		AC27C5FA1ECA9B390030039B /* Home_NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				AC27C5FB1ECA9B390030039B /* HomeNetWorkManager.h */,
+				AC27C5FC1ECA9B390030039B /* HomeNetWorkManager.m */,
+			);
+			path = Home_NetWork;
+			sourceTree = "<group>";
+		};
+		AC27C5FD1ECA9B390030039B /* Hot_NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				AC27C6011ECA9B510030039B /* HotNetWorkManager.h */,
+				AC27C6021ECA9B510030039B /* HotNetWorkManager.m */,
+			);
+			path = Hot_NetWork;
+			sourceTree = "<group>";
+		};
+		AC27C5FE1ECA9B390030039B /* Personl_NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Personl_NetWork;
+			sourceTree = "<group>";
+		};
+		AC27C5FF1ECA9B390030039B /* Shop_NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				AC27C60D1ECAD8C00030039B /* ShopNetWorkManager.h */,
+				AC27C60E1ECAD8C00030039B /* ShopNetWorkManager.m */,
+			);
+			path = Shop_NetWork;
+			sourceTree = "<group>";
+		};
 		AC88C2191EC049AA001F7210 = {
 			isa = PBXGroup;
 			children = (
@@ -417,6 +532,8 @@
 			children = (
 				ACEF0F9F1EC2E503000EC9AA /* AccountManager.h */,
 				ACEF0FA01EC2E503000EC9AA /* AccountManager.m */,
+				AC27C6071ECAA4C20030039B /* HomeCategoryCacheManager.h */,
+				AC27C6081ECAA4C20030039B /* HomeCategoryCacheManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -436,8 +553,10 @@
 			children = (
 				ACEF0F281EC08D9F000EC9AA /* NetWorkManager.h */,
 				ACEF0F291EC08D9F000EC9AA /* NetWorkManager.m */,
-				ACEF0F2B1EC08DF5000EC9AA /* HomeNetWorkManager.h */,
-				ACEF0F2C1EC08DF5000EC9AA /* HomeNetWorkManager.m */,
+				AC27C5FA1ECA9B390030039B /* Home_NetWork */,
+				AC27C5FD1ECA9B390030039B /* Hot_NetWork */,
+				AC27C5FE1ECA9B390030039B /* Personl_NetWork */,
+				AC27C5FF1ECA9B390030039B /* Shop_NetWork */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -811,6 +930,8 @@
 		AC88C47C1EC04C1F001F7210 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AC27C60A1ECAD6820030039B /* HotListModel.h */,
+				AC27C60B1ECAD6820030039B /* HotListModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -877,6 +998,8 @@
 		AC88C4841EC04C1F001F7210 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AC27C6101ECADA550030039B /* ShopListModel.h */,
+				AC27C6111ECADA550030039B /* ShopListModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1098,6 +1221,9 @@
 		ACEF0F971EC2DD65000EC9AA /* Components(控件库) */ = {
 			isa = PBXGroup;
 			children = (
+				AC27C5DC1ECA93C60030039B /* 上 */,
+				AC27C5DD1ECA93C60030039B /* 下 */,
+				AC27C5DE1ECA93C60030039B /* HorizontalCollectionView */,
 				ACEF0F981EC2DD7B000EC9AA /* MajorButton.h */,
 				ACEF0F991EC2DD7B000EC9AA /* MajorButton.m */,
 			);
@@ -1264,6 +1390,7 @@
 				AC88C44E1EC04B43001F7210 /* XWFilterAnimator+XWFlash.m in Sources */,
 				AC88C4CD1EC0628D001F7210 /* UITableViewCell+Cell.m in Sources */,
 				ACEF0F391EC09003000EC9AA /* HomeSpecialModel.m in Sources */,
+				AC27C5EA1ECA93E60030039B /* TopCollectionView.m in Sources */,
 				AC88C4541EC04B43001F7210 /* XWFilterAnimator.m in Sources */,
 				ACEF0F361EC08FE8000EC9AA /* HomeADModel.m in Sources */,
 				AC88C4971EC04FB7001F7210 /* HomeViewController.m in Sources */,
@@ -1276,19 +1403,25 @@
 				AC88C4421EC04B43001F7210 /* XWCoolAnimator+XWExplode.m in Sources */,
 				ACEF0F791EC2B1DE000EC9AA /* CategoryRecommendModel.m in Sources */,
 				ACEF0F6C1EC2A1F7000EC9AA /* CategoryListLeftCell.m in Sources */,
+				AC27C5E51ECA93C60030039B /* HorizontalCollectionView.m in Sources */,
 				ACEF0FA11EC2E503000EC9AA /* AccountManager.m in Sources */,
 				ACEF0F1A1EC07673000EC9AA /* HistoryViewController.m in Sources */,
+				AC27C60F1ECAD8C00030039B /* ShopNetWorkManager.m in Sources */,
 				ACEF0F671EC1CD73000EC9AA /* CategoryListViewController.m in Sources */,
 				ACEF0F1D1EC07B0D000EC9AA /* HomeCategoryCell.m in Sources */,
+				AC27C5F91ECA96F70030039B /* BottomCollectionViewCell.m in Sources */,
 				ACEF0F761EC2B1CA000EC9AA /* CategoryFirstModel.m in Sources */,
 				AC88C4521EC04B43001F7210 /* XWFilterAnimator+XWRipple.m in Sources */,
+				AC27C6091ECAA4C20030039B /* HomeCategoryCacheManager.m in Sources */,
 				AC88C4561EC04B43001F7210 /* XWMagicMoveAnimator.m in Sources */,
 				ACEF0F121EC070D0000EC9AA /* ToolBaseClass.m in Sources */,
+				AC27C5ED1ECA93F90030039B /* TopCollectionViewCell.m in Sources */,
 				ACEF0F6F1EC2A204000EC9AA /* CategoryListRightCell.m in Sources */,
 				ACEF0FAA1EC2E997000EC9AA /* MacroNotifications.m in Sources */,
 				ACEF0F171EC07669000EC9AA /* SearchViewController.m in Sources */,
 				AC88C4481EC04B43001F7210 /* XWCoolAnimator+XWScanning.m in Sources */,
 				ACEF0F871EC2DA48000EC9AA /* RegisterViewController.m in Sources */,
+				AC27C6121ECADA550030039B /* ShopListModel.m in Sources */,
 				AC88C4551EC04B43001F7210 /* XWFilterTransitionView.m in Sources */,
 				AC88C4471EC04B43001F7210 /* XWCoolAnimator+XWPortal.m in Sources */,
 				AC88C4AF1EC054C3001F7210 /* RootTabItemModel.m in Sources */,
@@ -1302,27 +1435,34 @@
 				ACEF0F8D1EC2DB6C000EC9AA /* LoginBottomView.m in Sources */,
 				ACEF0F9E1EC2DF9D000EC9AA /* ScreeAdaptation.m in Sources */,
 				AC88C4A81EC04FF2001F7210 /* RootNavigationController.m in Sources */,
+				AC27C5F61ECA96E40030039B /* BottomCollectionView.m in Sources */,
 				ACEF0F9A1EC2DD7B000EC9AA /* MajorButton.m in Sources */,
+				AC27C60C1ECAD6820030039B /* HotListModel.m in Sources */,
+				AC27C5F31ECA96CB0030039B /* BottomCollectionViewFlowLayout.m in Sources */,
 				AC88C4BC1EC061B0001F7210 /* AIELoopViewCell.m in Sources */,
 				ACEF0F8A1EC2DA53000EC9AA /* LoginViewController.m in Sources */,
 				AC88C44D1EC04B43001F7210 /* XWFilterAnimator+XWCopyMachine.m in Sources */,
+				AC27C6031ECA9B510030039B /* HotNetWorkManager.m in Sources */,
 				ACEF0F0F1EC06FB3000EC9AA /* ScanQrCodeController.m in Sources */,
 				AC88C4D41EC06433001F7210 /* BaseModel.m in Sources */,
 				ACEF0FA71EC2E694000EC9AA /* Avatar.m in Sources */,
 				AC88C4511EC04B43001F7210 /* XWFilterAnimator+XWPageCurl.m in Sources */,
 				AC88C49D1EC04FE0001F7210 /* PersonalViewController.m in Sources */,
 				AC88C4CA1EC06252001F7210 /* UIView+Categorys.m in Sources */,
+				AC27C5E71ECA93C60030039B /* HorizontalFlowLayout.m in Sources */,
 				AC88C44A1EC04B43001F7210 /* XWDrawerAnimator.m in Sources */,
 				AC88C43A1EC04B43001F7210 /* UINavigationController+XWTransition.m in Sources */,
 				AC88C4C51EC061D9001F7210 /* UINavigationController+Additions.m in Sources */,
 				AC88C2271EC049AA001F7210 /* main.m in Sources */,
 				AC88C4411EC04B43001F7210 /* XWCircleSpreadAnimator.m in Sources */,
 				ACEF0F331EC08FD8000EC9AA /* HomeListModel.m in Sources */,
-				ACEF0F2D1EC08DF5000EC9AA /* HomeNetWorkManager.m in Sources */,
+				AC27C5F01ECA940C0030039B /* TopCollectionViewFlowLayout.m in Sources */,
 				ACEF0F231EC07B68000EC9AA /* HomeHotSubjectCell.m in Sources */,
+				AC27C6001ECA9B390030039B /* HomeNetWorkManager.m in Sources */,
 				ACEF0F731EC2B144000EC9AA /* CategoryListModel.m in Sources */,
 				AC88C4501EC04B43001F7210 /* XWFilterAnimator+XWMod.m in Sources */,
 				AC88C4531EC04B43001F7210 /* XWFilterAnimator+XWSwipe.m in Sources */,
+				AC27C5E61ECA93C60030039B /* HorizontalCollectionViewCell.m in Sources */,
 				ACEF0F411EC0981B000EC9AA /* CategoryCollectionView.m in Sources */,
 				ACEF0F2A1EC08D9F000EC9AA /* NetWorkManager.m in Sources */,
 				AC88C4441EC04B43001F7210 /* XWCoolAnimator+XWLines.m in Sources */,

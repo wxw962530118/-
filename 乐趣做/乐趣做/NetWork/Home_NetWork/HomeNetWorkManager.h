@@ -10,7 +10,7 @@
 
 @interface HomeNetWorkManager : NetWorkManager
 
-+(instancetype)manager;
++(instancetype)shareManager;
 
 /**获取首页分类数据*/
 -(NSURLSessionDataTask *)getHomeCategoryDataWithSuccess:(void (^)(id respons))success faile:(void (^)(NSURLSessionDataTask * task,NSError * error))faile;
