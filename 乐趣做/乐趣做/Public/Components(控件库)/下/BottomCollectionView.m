@@ -19,7 +19,6 @@
 @interface BottomCollectionView ()<UICollectionViewDelegate,UICollectionViewDataSource>{
     NSUInteger Page_NO;
     NSUInteger Page_Count;
-
 }
 
 @property (nonatomic, strong) NSMutableArray <ShopListModel*>*shopListArray;
