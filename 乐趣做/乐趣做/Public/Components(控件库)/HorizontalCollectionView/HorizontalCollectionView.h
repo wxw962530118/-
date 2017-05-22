@@ -12,5 +12,7 @@
 @interface HorizontalCollectionView : UICollectionView
 @property (nonatomic, strong) NSArray <HomeCategoryModel *>*categoryArray;//分类数据源
 @property (nonatomic, weak) UIViewController *superVC;
+
 +(instancetype)getHorizontalCollectionView;
+
 @end

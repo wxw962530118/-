@@ -23,6 +23,7 @@
 @end
 
 @implementation HorizontalCollectionView
+
 static NSString *reuseIdentifier = @"Cell";
 
 +(instancetype)getHorizontalCollectionView{
